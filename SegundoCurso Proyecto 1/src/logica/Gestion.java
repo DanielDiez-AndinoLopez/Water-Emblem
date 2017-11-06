@@ -17,10 +17,6 @@ public class Gestion implements IGestion{
 		
 	}
 
-	@Override
-	public void esperar() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
