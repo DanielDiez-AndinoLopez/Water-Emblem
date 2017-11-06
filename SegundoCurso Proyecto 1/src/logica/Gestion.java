@@ -1,8 +1,17 @@
 package logica;
 
-public class Gestion implements IGestion{
+import datos.Guerrero;
 
+public class Gestion implements IGestion{
 	
+	
+	
+	public void añadirGuerrero(){
+		
+	}
+	public void borrarGuerrero(){
+		
+	}
 	
 	@Override
 	public void atacar() {
