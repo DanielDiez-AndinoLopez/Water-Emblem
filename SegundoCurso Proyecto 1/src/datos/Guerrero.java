@@ -2,6 +2,7 @@ package datos;
 
 public class Guerrero {
 	
+	
 	protected int ataque;
 	protected int vida;
 	protected int movimiento;
@@ -16,27 +17,20 @@ public class Guerrero {
 	}
 	
 	public Guerrero() {
-		this.critico = 0;
 		this.ataque = 0;
 		this.vida = 0;
 		this.movimiento = 0;
+		this.critico = 0;
 	}
 	
 	public Guerrero(Guerrero c) {
-		this.critico = c.critico;
 		this.ataque = c.ataque;
 		this.vida = c.vida;
 		this.movimiento = c.movimiento;
+		this.critico = c.critico;
 	}
 	
-	public int getCritico() {
-		return critico;
-	}
-
-	public void setCritico(int critico) {
-		this.critico = critico;
-	}
-
+	
 	public int getAtaque() {
 		return ataque;
 	}
@@ -54,6 +48,12 @@ public class Guerrero {
 	}
 	public void setMovimiento(int movimiento) {
 		this.movimiento = movimiento;
+	}
+	public int getCritico() {
+		return critico;
+	}
+	public void setCritico(int critico) {
+		this.critico = critico;
 	}
 	
 

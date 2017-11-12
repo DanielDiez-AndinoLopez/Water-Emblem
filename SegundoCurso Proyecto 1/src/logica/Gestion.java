@@ -1,15 +1,23 @@
 package logica;
 
 import datos.Guerrero;
+import guia.VInicio;
 
 public class Gestion implements IGestion{
 	
+		public static Guerrero Ejercito_J1[]=new Guerrero[15];
+		public static Guerrero Ejercito_J2[]=new Guerrero[15];
 	
-	
-	public void añadirGuerrero(){
+	public Gestion() {
 		
-	}
-	public void borrarGuerrero(){
+		for(int i = 0; i < Ejercito_J1.length ; i++ ){
+			Ejercito_J1[i]=new Guerrero();
+			
+		}
+		for(int i = 0; i < Ejercito_J2.length ; i++ ){
+			
+		}
+		
 		
 	}
 	
@@ -24,8 +32,6 @@ public class Gestion implements IGestion{
 	public void mover() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	
+	}	
 
 }
