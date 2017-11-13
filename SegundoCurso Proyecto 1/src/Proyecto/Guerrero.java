@@ -1,4 +1,4 @@
-package datos;
+package Proyecto;
 
 public class Guerrero {
 	

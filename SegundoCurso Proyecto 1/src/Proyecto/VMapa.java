@@ -1,15 +1,16 @@
-package guia;
+package Proyecto;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.Color;
 
-public class VPrueba {
+public class VMapa {
 
 	private JFrame frame;
+	private JPanel panel;
 
 	/**
 	 * Launch the application.
@@ -18,7 +19,7 @@ public class VPrueba {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					VPrueba window = new VPrueba();
+					VMapa window = new VMapa();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,7 +31,7 @@ public class VPrueba {
 	/**
 	 * Create the application.
 	 */
-	public VPrueba() {
+	public VMapa() {
 		initialize();
 	}
 
@@ -42,9 +43,10 @@ public class VPrueba {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JPanel panel = new JPanel();
+		panel = new JPanel();
 		panel.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package guia;
+package Proyecto;
 
 import java.awt.EventQueue;
 
@@ -33,8 +33,8 @@ public class VInicio extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					VInicio window = new VInicio();
-					window.frame.setVisible(true);
+					VInicio VentanaInicio = new VInicio();
+					VentanaInicio.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -75,29 +75,29 @@ public class VInicio extends JFrame {
 		PanelJugador_1.add(panel_1);
 		panel_1.setLayout(new GridLayout(3, 1, 0, 0));
 		
-		JLabel lblNewLabel_4 = new JLabel("Lancero:");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_1.add(lblNewLabel_4);
+		JLabel J1TipoLancero = new JLabel("Lancero:");
+		J1TipoLancero.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_1.add(J1TipoLancero);
 		
-		JSpinner spinner_1 = new JSpinner();
-		panel_1.add(spinner_1);
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		JSpinner J1Lanceros = new JSpinner();
+		panel_1.add(J1Lanceros);
+		J1Lanceros.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		
-		JLabel lblNewLabel_2 = new JLabel("Barbaro:");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_1.add(lblNewLabel_2);
+		JLabel J1TipoBarbaro = new JLabel("Barbaro:");
+		J1TipoBarbaro.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_1.add(J1TipoBarbaro);
 		
-		JSpinner spinner_2 = new JSpinner();
-		panel_1.add(spinner_2);
-		spinner_2.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		JSpinner J1Barbaro = new JSpinner();
+		panel_1.add(J1Barbaro);
+		J1Barbaro.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		
-		JLabel lblNewLabel_3 = new JLabel("Espadachin:");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_1.add(lblNewLabel_3);
+		JLabel J1TipoEspadachin = new JLabel("Espadachin:");
+		J1TipoEspadachin.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_1.add(J1TipoEspadachin);
 		
-		JSpinner spinner = new JSpinner();
-		panel_1.add(spinner);
-		spinner.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		JSpinner J1Espadachin = new JSpinner();
+		panel_1.add(J1Espadachin);
+		J1Espadachin.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		
 		JPanel PanelJugador_2 = new JPanel();
 		PanelJugador_2.setForeground(Color.BLACK);
@@ -117,29 +117,29 @@ public class VInicio extends JFrame {
 		PanelJugador_2.add(panel_4);
 		panel_4.setLayout(new GridLayout(3, 1, 0, 0));
 		
-		JLabel label_1 = new JLabel("Lancero:");
-		label_1.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_4.add(label_1);
+		JLabel J2TipoLancero = new JLabel("Lancero:");
+		J2TipoLancero.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_4.add(J2TipoLancero);
 		
-		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, 0, 15, 1));
-		panel_4.add(spinner_3);
+		JSpinner J2Lancero = new JSpinner();
+		J2Lancero.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		panel_4.add(J2Lancero);
 		
-		JLabel label_2 = new JLabel("Barbaro:");
-		label_2.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_4.add(label_2);
+		JLabel J2TipoBarbaro = new JLabel("Barbaro:");
+		J2TipoBarbaro.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_4.add(J2TipoBarbaro);
 		
-		JSpinner spinner_4 = new JSpinner();
-		spinner_4.setModel(new SpinnerNumberModel(0, 0, 15, 1));
-		panel_4.add(spinner_4);
+		JSpinner J2Barbaro = new JSpinner();
+		J2Barbaro.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		panel_4.add(J2Barbaro);
 		
-		JLabel label_3 = new JLabel("Espadachin:");
-		label_3.setFont(new Font("Tahoma", Font.BOLD, 15));
-		panel_4.add(label_3);
+		JLabel J2TipoEspadachin = new JLabel("Espadachin:");
+		J2TipoEspadachin.setFont(new Font("Tahoma", Font.BOLD, 15));
+		panel_4.add(J2TipoEspadachin);
 		
-		JSpinner spinner_5 = new JSpinner();
-		spinner_5.setModel(new SpinnerNumberModel(0, 0, 15, 1));
-		panel_4.add(spinner_5);
+		JSpinner J2Espadachin = new JSpinner();
+		J2Espadachin.setModel(new SpinnerNumberModel(0, 0, 15, 1));
+		panel_4.add(J2Espadachin);
 		
 		
 		JPanel Ajustes = new JPanel();
@@ -147,12 +147,23 @@ public class VInicio extends JFrame {
 		flowLayout.setVgap(20);
 		frame.getContentPane().add(Ajustes, BorderLayout.SOUTH);
 		
-		JButton btnNewButton = new JButton("Comenzar");
-		Ajustes.add(btnNewButton);
+		JButton bAceptar = new JButton("Comenzar");
+		Ajustes.add(bAceptar);
+		bAceptar.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//Añadir codigo comprobacion de unidades de cada jugador.
+				//Añadir apertura de la c
+				
+			}
+			
+		});
 		
-		JButton btnNewButton_1 = new JButton("Cancelar");
-		Ajustes.add(btnNewButton_1);
-		btnNewButton_1.addActionListener(new ActionListener() {
+		
+		JButton bCancelar = new JButton("Cancelar");
+		Ajustes.add(bCancelar);
+		bCancelar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				dispose();				

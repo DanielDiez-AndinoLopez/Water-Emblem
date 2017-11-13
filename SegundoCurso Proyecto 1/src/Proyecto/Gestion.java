@@ -1,7 +1,4 @@
-package logica;
-
-import datos.Guerrero;
-import guia.VInicio;
+package Proyecto;
 
 public class Gestion implements IGestion{
 	

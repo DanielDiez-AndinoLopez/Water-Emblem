@@ -1,4 +1,4 @@
-package logica;
+package Proyecto;
 
 public interface IGestion {
 	
