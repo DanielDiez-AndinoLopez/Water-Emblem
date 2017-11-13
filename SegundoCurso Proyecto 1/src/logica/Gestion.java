@@ -11,6 +11,7 @@ public class Gestion implements IGestion{
 	public Gestion() {
 		
 		for(int i = 0; i < Ejercito_J1.length ; i++ ){
+			
 			Ejercito_J1[i]=new Guerrero();
 			
 		}
@@ -23,7 +24,7 @@ public class Gestion implements IGestion{
 	
 	@Override
 	public void atacar() {
-		// TODO Auto-generated method stub
+		
 		
 		
 	}

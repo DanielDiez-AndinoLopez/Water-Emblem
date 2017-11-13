@@ -58,6 +58,7 @@ public class VInicio extends JFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel PanelJugador_1 = new JPanel();
+		PanelJugador_1.setForeground(Color.BLACK);
 		frame.getContentPane().add(PanelJugador_1, BorderLayout.WEST);
 		PanelJugador_1.setLayout(new GridLayout(0, 1, 0, 0));
 		
@@ -99,6 +100,7 @@ public class VInicio extends JFrame {
 		spinner.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		
 		JPanel PanelJugador_2 = new JPanel();
+		PanelJugador_2.setForeground(Color.BLACK);
 		frame.getContentPane().add(PanelJugador_2, BorderLayout.EAST);
 		PanelJugador_2.setLayout(new GridLayout(0, 1, 0, 0));
 		
@@ -139,10 +141,6 @@ public class VInicio extends JFrame {
 		spinner_5.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		panel_4.add(spinner_5);
 		
-		JPanel PanelMapa = new JPanel();
-		PanelMapa.setBackground(Color.WHITE);
-		frame.getContentPane().add(PanelMapa, BorderLayout.CENTER);
-		
 		
 		JPanel Ajustes = new JPanel();
 		FlowLayout flowLayout = (FlowLayout) Ajustes.getLayout();
@@ -153,17 +151,21 @@ public class VInicio extends JFrame {
 		Ajustes.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Cancelar");
+		Ajustes.add(btnNewButton_1);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				dispose();				
 			}
 		});
-		Ajustes.add(btnNewButton_1);
-		
+	
 		
 		JButton btnNewButton_2 = new JButton("Ajustes");
 		Ajustes.add(btnNewButton_2);
+		
+		JPanel PanelMapa = new JPanel();
+		PanelMapa.setBackground(Color.WHITE);
+		frame.getContentPane().add(PanelMapa, BorderLayout.CENTER);
 	}
 
 }
