@@ -5,13 +5,13 @@ public class Casilla extends Tablero{
 	private int tipo;
 	private int PostX;
 	private int PostY;
-	private int Ocupado;
+	private boolean Ocupado;
 	
-	public Casilla(int tipo, int postX, int postY, int ocupado) {
+	public Casilla(int tipo, int postX, int postY, boolean ocupado) {
 		this.tipo = tipo;
 		PostX = postX;
 		PostY = postY;
-		Ocupado = ocupado;
+		Ocupado = false;
 	}
 	
 

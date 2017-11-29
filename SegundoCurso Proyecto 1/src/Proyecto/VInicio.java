@@ -124,6 +124,7 @@ public class VInicio extends JFrame {
 		JSpinner J2Lancero = new JSpinner();
 		J2Lancero.setModel(new SpinnerNumberModel(0, 0, 15, 1));
 		panel_4.add(J2Lancero);
+		J2Lancero.getToolTipText();
 		
 		JLabel J2TipoBarbaro = new JLabel("Barbaro:");
 		J2TipoBarbaro.setFont(new Font("Tahoma", Font.BOLD, 15));
@@ -166,13 +167,21 @@ public class VInicio extends JFrame {
 		bCancelar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				dispose();				
+				frame.dispose();			
 			}
 		});
 	
 		
-		JButton btnNewButton_2 = new JButton("Ajustes");
-		Ajustes.add(btnNewButton_2);
+		JButton bAjustes = new JButton("Ajustes");
+		Ajustes.add(bAjustes);
+		bAjustes.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// En caso de que tengamos tiempo para añadir mas configuraciones al juego.
+				
+			}
+		});
+		
 		
 		JPanel PanelMapa = new JPanel();
 		PanelMapa.setBackground(Color.WHITE);
