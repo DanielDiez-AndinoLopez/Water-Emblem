@@ -2,11 +2,10 @@ package Proyecto;
 
 public class Tablero {
 	
-	protected int tablero[][];
 	
 	public static void main (String[] args){
 		
-		Tablero[][] a = new Tablero[20][20];
+		//tablero = new Casilla[20][20]; Ponerlo en el constructor
 		
 		
 	}

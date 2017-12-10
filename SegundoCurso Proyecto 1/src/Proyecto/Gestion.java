@@ -4,15 +4,19 @@ import javax.swing.JSpinner;
 
 import Proyecto.VInicio;
 
-public class Gestion implements IGestion{
+public class Gestion{
 	
 		public static Guerrero Ejercito_J1[]=new Guerrero[15];
 		public static Guerrero Ejercito_J2[]=new Guerrero[15];
 		
-		VInicio a = new VInicio();
+		VInicio inicio = new VInicio();
+		VMapa mapa = new VMapa();
 		JSpinner J2Lancero = new JSpinner();
 	
 	public Gestion() {
+		
+		inicio.setVisible(true);
+		
 		
 		
 		for(int i = 0; i < Ejercito_J1.length ; i++ ){
@@ -29,14 +33,12 @@ public class Gestion implements IGestion{
 		
 	}
 	
-	@Override
 	public void atacar() {
 		
 		
 		
 	}
 
-	@Override
 	public void mover() {
 		// TODO Auto-generated method stub
 		
