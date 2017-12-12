@@ -54,8 +54,9 @@ public class VInicio extends JFrame {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 627, 482);
+		frame.setBounds(600, 300, 800, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		
 		JPanel PanelJugador_1 = new JPanel();
 		PanelJugador_1.setForeground(Color.BLACK);
@@ -66,10 +67,10 @@ public class VInicio extends JFrame {
 		PanelJugador_1.add(panel);
 		panel.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		JLabel lblNewLabel = new JLabel("Jugador 1");
-		panel.add(lblNewLabel);
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 21));
+		JLabel lblJugador1 = new JLabel("Jugador 1");
+		panel.add(lblJugador1);
+		lblJugador1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblJugador1.setFont(new Font("Tahoma", Font.BOLD, 21));
 		
 		JPanel panel_1 = new JPanel();
 		PanelJugador_1.add(panel_1);
@@ -108,10 +109,10 @@ public class VInicio extends JFrame {
 		PanelJugador_2.add(panel_3);
 		panel_3.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		JLabel label = new JLabel("Jugador 2");
-		label.setHorizontalAlignment(SwingConstants.CENTER);
-		label.setFont(new Font("Tahoma", Font.BOLD, 21));
-		panel_3.add(label);
+		JLabel lblJugador2 = new JLabel("Jugador 2");
+		lblJugador2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblJugador2.setFont(new Font("Tahoma", Font.BOLD, 21));
+		panel_3.add(lblJugador2);
 		
 		JPanel panel_4 = new JPanel();
 		PanelJugador_2.add(panel_4);
@@ -154,8 +155,12 @@ public class VInicio extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//Añadir codigo comprobacion de unidades de cada jugador.
-				//Añadir apertura de la c
+				
+				
+				VMapa mapa = new VMapa();
+				mapa.setVisible(true);
+				
+				
 				
 			}
 			
@@ -183,9 +188,26 @@ public class VInicio extends JFrame {
 		});
 		
 		
+		//Fallo
+		
 		JPanel PanelMapa = new JPanel();
 		PanelMapa.setBackground(Color.WHITE);
 		frame.getContentPane().add(PanelMapa, BorderLayout.CENTER);
+		PanelMapa.setLayout(new GridLayout(10,0,10,0));
+		
+		JLabel Casillas = new JLabel();
+		Casillas.setForeground(Color.black);
+		
+		PanelMapa.add(Casillas);
+		
+		
+	}
+	//Metodo de comprobacion de los Spinners para que la suma de 15 como maximo.
+	public boolean comprobacion(){
+		
+		
+		
+		return false;
 	}
 
 }

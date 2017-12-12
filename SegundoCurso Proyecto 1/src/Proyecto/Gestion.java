@@ -10,7 +10,6 @@ public class Gestion{
 		public static Guerrero Ejercito_J2[]=new Guerrero[15];
 		
 		VInicio inicio = new VInicio();
-		VMapa mapa = new VMapa();
 		JSpinner J2Lancero = new JSpinner();
 	
 	public Gestion() {
