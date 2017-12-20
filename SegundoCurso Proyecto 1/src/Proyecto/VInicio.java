@@ -154,17 +154,14 @@ public class VInicio extends JFrame {
 		bAceptar.addActionListener(new ActionListener() {
 
 			@Override
-			public void actionPerformed(ActionEvent e) {
-				
-				
+			public void actionPerformed(ActionEvent e) {	
 				VMapa mapa = new VMapa();
 				mapa.setVisible(true);
-				
-				
-				
+		 					
 			}
 			
 		});
+		
 		
 		
 		JButton bCancelar = new JButton("Cancelar");
@@ -188,6 +185,11 @@ public class VInicio extends JFrame {
 		});
 		
 		
+		
+		//double TotalUnidades = J1Barbaro + J1Espadachin + J1Lanceros;
+		
+		
+		
 		//Fallo
 		
 		JPanel PanelMapa = new JPanel();
@@ -202,12 +204,16 @@ public class VInicio extends JFrame {
 		
 		
 	}
+	
+	
 	//Metodo de comprobacion de los Spinners para que la suma de 15 como maximo.
-	public boolean comprobacion(){
+	public boolean comprobacion_Spinner(int numero){
 		
-		
-		
-		return false;
+		if(numero > 15){
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 }

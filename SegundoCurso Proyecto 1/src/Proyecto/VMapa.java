@@ -1,8 +1,11 @@
 package Proyecto;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.GridLayout;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -45,9 +48,34 @@ public class VMapa extends JFrame {
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		JPanel Marcador = new JPanel();
-		
 		frame.getContentPane().add(Marcador, BorderLayout.NORTH);
 		
+		JLabel Nombre_Jugador1 = new JLabel("Jugador 1");
+		Marcador.add(Nombre_Jugador1, BorderLayout.EAST);
+		
+		JLabel Nombre_Jugador2 = new JLabel("Jugador 2");
+		Marcador.add(Nombre_Jugador2, BorderLayout.WEST);
+		
+		JLabel Temporizador = new JLabel("Temporizador:");
+		Marcador.add(Temporizador, BorderLayout.NORTH);
+		
+		JLabel Temporizador_Num = new JLabel();
+		Marcador.add(Temporizador_Num, BorderLayout.NORTH);
+		
+		JPanel Mapa = new JPanel(new GridLayout(10,10,5,5));
+		Mapa.setBackground(Color.WHITE);
+		frame.getContentPane().add(Mapa, BorderLayout.CENTER);
+		
+		//Poner los JLabel de cada parte del mapa con los datos de la clase casilla
+		
+		Casilla casilla1 = new Casilla();
+		
+		
+		JPanel Opciones = new JPanel();
+		Opciones.setBackground(Color.GRAY);
+		frame.getContentPane().add(Opciones, BorderLayout.SOUTH);
+		
+		JButton Atacar = new JButton();
 		
 
 	}
