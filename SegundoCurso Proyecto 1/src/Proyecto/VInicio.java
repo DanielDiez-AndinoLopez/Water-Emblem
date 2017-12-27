@@ -76,7 +76,7 @@ public class VInicio extends JFrame {
 		PanelJugador_1.add(panel_1);
 		panel_1.setLayout(new GridLayout(3, 1, 0, 0));
 		
-		JLabel J1TipoLancero = new JLabel("Lancero:");
+		JLabel J1TipoLancero = new JLabel("Lancero: ");
 		J1TipoLancero.setFont(new Font("Tahoma", Font.BOLD, 15));
 		panel_1.add(J1TipoLancero);
 		

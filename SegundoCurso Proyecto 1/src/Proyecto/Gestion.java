@@ -22,7 +22,7 @@ public class Gestion{
 			//for(int j = 0; j < J2Lancero.getToolTipText();)
 			
 			
-			Ejercito_J1[i]=new Guerrero();
+			
 			
 		}
 		for(int i = 0; i < Ejercito_J2.length ; i++ ){

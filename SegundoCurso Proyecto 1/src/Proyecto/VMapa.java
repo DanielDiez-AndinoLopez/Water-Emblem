@@ -68,7 +68,7 @@ public class VMapa extends JFrame {
 		
 		//Poner los JLabel de cada parte del mapa con los datos de la clase casilla
 		
-		Casilla casilla1 = new Casilla();
+		
 		
 		
 		JPanel Opciones = new JPanel();
