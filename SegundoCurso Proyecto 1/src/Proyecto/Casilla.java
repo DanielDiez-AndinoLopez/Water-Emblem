@@ -41,6 +41,8 @@ public class Casilla extends JLabel {
 			setIcon(new ImageIcon("Arbol.png"));
 		} else if(tipo.equals("Montaña")){
 			setIcon(new ImageIcon("Montaña.png"));
+		} else if(ocupado == 1){
+			setIcon(new ImageIcon("Unidad.png"));
 		}
 	}
 	
