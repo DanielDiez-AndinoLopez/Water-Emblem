@@ -12,6 +12,10 @@ public class Gestion{
 		VInicio inicio = new VInicio();
 		JSpinner J2Lancero = new JSpinner();
 	
+	public static void main(String args){
+		
+	}
+		
 	public Gestion() {
 		
 		inicio.setVisible(true);

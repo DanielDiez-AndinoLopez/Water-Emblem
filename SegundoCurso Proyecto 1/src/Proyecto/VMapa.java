@@ -48,16 +48,17 @@ public class VMapa extends JFrame {
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		JPanel Marcador = new JPanel();
+		Marcador.setLayout(new BorderLayout());
 		frame.getContentPane().add(Marcador, BorderLayout.NORTH);
 		
-		JLabel Nombre_Jugador1 = new JLabel("Jugador 1");
+		JLabel Nombre_Jugador1 = new JLabel("Jugador 1  ");
 		Marcador.add(Nombre_Jugador1, BorderLayout.EAST);
 		
-		JLabel Nombre_Jugador2 = new JLabel("Jugador 2");
+		JLabel Nombre_Jugador2 = new JLabel("  Jugador 2");
 		Marcador.add(Nombre_Jugador2, BorderLayout.WEST);
 		
 		JLabel Temporizador = new JLabel("Temporizador:");
-		Marcador.add(Temporizador, BorderLayout.NORTH);
+		Marcador.add(Temporizador, BorderLayout.CENTER);
 		
 		JLabel Temporizador_Num = new JLabel();
 		Marcador.add(Temporizador_Num, BorderLayout.NORTH);
